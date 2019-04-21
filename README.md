@@ -41,7 +41,6 @@
 
 - Javascript에서 Json 여부 확인 할 수 있는 External Method 발견하지 못함
 - Json을 stringify 했을때 길이가 일정하게 2만큼 길어짐
-
 ```javascript
 
 	function isJson(data) {
@@ -56,3 +55,21 @@
  ```
  
  ---
+ 
+ ### @Dismantle Json Layers
+ 
+ - 두가지 방법 존재
+ ```javascript
+ 	function firstMethod(foo){
+ 		$.each(foo, function() {
+		...
+		}); 
+ 	}
+```
+```javascript
+	function secondMethod(foo){
+		for(var bar in foo){
+		foo[bar]...
+		}
+	}
+```
