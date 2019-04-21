@@ -36,3 +36,23 @@
 - WEB-INF - lib 에 json.jar, json-api.jar import 확인
 
 ---
+
+### @Check Json Type
+
+- Javascript에서 Json 여부 확인 할 수 있는 External Method 발견하지 못함
+- Json을 stringify 했을때 길이가 일정하게 2만큼 길어짐
+
+```javascript
+
+	function isJson(data) {
+		var oldData = data;
+		var newData = JSON.stringify(data);
+		if (Object.keys(oldData).length == (Object.keys(newData).length - 2)) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+ ```
+ 
+ ---
