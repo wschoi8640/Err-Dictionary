@@ -58,7 +58,7 @@
  
  ### @Dismantle Json Layers
  
- - 두가지 방법 존재(2번째가 나음 - key 조회 가능)
+ - 두가지 방법 존재(2nd better - key 조회 가능)
  ```javascript
  	function firstMethod(foo){
  		$.each(foo, function() {
