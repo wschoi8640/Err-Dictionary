@@ -73,3 +73,14 @@
 		}
 	}
 ```
+
+---
+
+### @Repeat String Without Loop
+
+ - <http://commons.apache.org/proper/commons-lang/download_lang.cgi>
+ ```java
+ void repeat(str,num){
+ 	StringUtils.repeat(str, num);
+ }
+ ```
