@@ -90,4 +90,5 @@
 ### @Connection Timed Out : Connect
 
 - 방화벽 인바운드 규칙 확인
-- Ip, Port 다시 한번 
+- Ip, Port 다시 한번 확인
+- 사설 IP 아닌지 
