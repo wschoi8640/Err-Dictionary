@@ -84,3 +84,10 @@
  	StringUtils.repeat(str, num);
  }
  ```
+
+---
+
+### @Connection Timed Out : Connect
+
+- 방화벽 인바운드 규칙 확인
+- Ip, Port 다시 한번 
