@@ -98,8 +98,12 @@
 ### @git push not working
 
 * 메시지
+
+```git
 - 'origin' doesn't appear to be a git repository.
 - Could not read from repository.
+```
+
 * 로컬과 remote repository 연결 안되어 있는 상태
 - git remote add origin remote URL 로 연결시켜줘야 함
 
@@ -108,7 +112,11 @@
 ### @git pull not working
 
 * 메시지
+
+```git
 - There is no tracking information for the current branch.
 - Please specify which branch you want to merge with.
+```
+
 * 로컬과 remote repository 연결 설정 문제
 - git branch --set-upstream-to=origin/master master
