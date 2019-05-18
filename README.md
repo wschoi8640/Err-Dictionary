@@ -120,3 +120,13 @@
 
 * 로컬과 remote repository 연결 설정 문제
 - git branch --set-upstream-to=origin/master master
+
+---
+
+### @modify git commit
+
+* push 하기 전 상태에 사용 
+
+* git commit --amend
+
+* vi 처럼 내용 수정하고 저장하면 수정됨
