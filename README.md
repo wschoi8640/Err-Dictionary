@@ -130,3 +130,21 @@
 * git commit --amend
 
 * vi 처럼 내용 수정하고 저장하면 수정됨
+
+---
+
+### @ajax spring not working
+
+* request는 정상적으로 가능하지만 response에 문제가 생겨서 error가 실행됨
+
+```java
+@RequestMapping(value = "/foo")
+public void foo(HttpServletResponse response ...)
+{
+	response.getWriter().write("bar");
+}
+```
+
+* response의 writer를 통해 response 처리를 할 수 있음
+
+* 컨트롤러 메소드에 리턴값 매핑설정이 되어있는 경우 void 처리하면 
