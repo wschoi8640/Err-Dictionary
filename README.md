@@ -157,4 +157,4 @@ public void foo(HttpServletResponse response ...)
 
 * db url에 verifyServerCertificate=false&useSSL=false 추가해주면됨
 
-* 그래도 오류날 경우 & -> &amp; 로  
+* 그래도 오류날 경우 "&" -> "&amp;" 로  
