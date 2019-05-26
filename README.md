@@ -148,3 +148,5 @@ public void foo(HttpServletResponse response ...)
 * response의 writer를 통해 response 처리를 할 수 있음
 
 * 컨트롤러 메소드에 리턴값 매핑설정이 되어있는 경우 void 처리하면 해결 가능
+
+* writer에 string 값이 아닌 int를 넣으면 전달되지 않기도 
