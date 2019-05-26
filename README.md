@@ -150,3 +150,11 @@ public void foo(HttpServletResponse response ...)
 * 컨트롤러 메소드에 리턴값 매핑설정이 되어있는 경우 void 처리하면 해결 가능
 
 * writer에 string 값이 아닌 int를 넣으면 전달되지 않기도 
+
+---
+
+### @mysql ssl error
+
+* db url에 verifyServerCertificate=false&useSSL=false 추가해주면됨
+
+* 그래도 오류날 경우 & -> &amp; 로  
