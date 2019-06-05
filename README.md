@@ -160,3 +160,35 @@ public void foo(HttpServletResponse response ...)
 * 그래도 오류날 경우 "&" -> "&amp;" 로  
 
 ---
+
+### @json printing object object
+
+* javascript 에서 foo로 출력하면 안되고 foo.value로 해야함
+
+* 올바른 예시
+
+```javascript
+success: function(data){
+	if(data=="") return;
+	var parsed = JSON.parse(data);
+	var result = parsed.result;
+	for(var i = 0; i < result.length; i++){
+		addBbsContent(result[i][0].value, result[i][1].value, result[i][2].value, result[i][3].value);
+	}
+	var pageNumber = Number(parsed.last);
+}
+```
+
+* 틀린 예시
+
+```javascript
+success: function(data){
+	if(data=="") return;
+	var parsed = JSON.parse(data);
+	var result = parsed.result;
+	for(var i = 0; i < result.length; i++){
+		addBbsContent(result[i][0], result[i][1], result[i][2], result[i][3]);
+	}
+	var pageNumber = Number(parsed.last);
+}
+```
