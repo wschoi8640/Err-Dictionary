@@ -192,3 +192,15 @@ success: function(data){
 	var pageNumber = Number(parsed.last);
 }
 ```
+
+---
+
+### @ Arrays.asList 사용
+
+* 기계적으로 쓰지말고 다른 형태도 고려해 볼 것
+
+```java
+List<String> list0 = new LinkedList<String>(Arrays.asList(arr));
+List<String> list1 = new ArrayList<String>(Arrays.asList(arr));
+
+```
