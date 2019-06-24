@@ -204,3 +204,16 @@ List<String> list0 = new LinkedList<String>(Arrays.asList(arr));
 List<String> list1 = new ArrayList<String>(Arrays.asList(arr));
 
 ```
+---
+
+### @ Git commit message 변경
+
+* 마지막 메시지 변경 : git commit --amend
+* 그전 메시지 변경 : 
+
+1. git rebase -i HEAD~위치
+2. 수정 원하는 메시지를 pick -> edit로 변경
+3. git commit --amend 에서 수정
+4. push
+
+---
